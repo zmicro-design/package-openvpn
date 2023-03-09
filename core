@@ -15,18 +15,14 @@ install() {
   local usr_bin_dir="$PACKAGE_USER_BIN_DIR"
   local tmp_dir="$PACKAGE_TMP_DIR"
 
-  # #
-  # case $platform in
-  # darwin)
-  #   platform="osx"
-  #   ;;
-  # linux) ;;
-
-  # *)
-  #   log::error "[$(timestamp)] unsupport platform: $platform"
-  #   return 1
-  #   ;;
-  # esac
+  #
+  case $platform in
+  linux) ;;
+  *)
+    log::error "[$(timestamp)] unsupport platform: $platform"
+    return 1
+    ;;
+  esac
 
   # case $arch in
   # arm64) ;;

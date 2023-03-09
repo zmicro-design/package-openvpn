@@ -116,7 +116,7 @@ install() {
   # install
   log::info "[$(timestamp)][package][$name] installing ..."
   # os::install $source_bin_file $usr_bin_dir $name
-  bash $tmp_file
+  sudo bash $tmp_file
   if [ "$?" != "0" ]; then
     log::error "[$(timestamp)][package][$name] failed to install openvpn."
     return 1

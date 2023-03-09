@@ -10,6 +10,7 @@ help() {
   echo ""
 
   openvpn --help
+  return 0
 }
 
 version() {

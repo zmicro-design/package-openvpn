@@ -26,7 +26,7 @@ core() {
   # context directory
 
   case $1 in
-  -h | --help | help)
+  -h | --help | help | '')
     help
     ;;
   -v | --version | version)
